@@ -12,6 +12,11 @@ export const styles =  StyleSheet.create({
         flex: 1,
         paddingTop: StatusBar.currentHeight
     },
+    containerGame: {
+        flex: 1,
+        alignItems: 'flex-start',
+        backgroundColor: '#79e84f'
+    },
     header: {
         backgroundColor: 'grey',
         padding: '1%',

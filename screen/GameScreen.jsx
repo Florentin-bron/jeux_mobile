@@ -6,7 +6,7 @@ import Game from '../component/Game';
 
 export default function GameScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{flex: 1, backgroundColor: 'red'}}>
       <Game/>
     </View>
   );
