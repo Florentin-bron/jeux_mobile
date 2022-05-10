@@ -8,11 +8,6 @@ export default function GameScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Game/>
-        <Text>Test</Text>
-      <Button
-        title="Go to home"
-        onPress={() => navigation.navigate('Content')}
-      />
     </View>
   );
 }

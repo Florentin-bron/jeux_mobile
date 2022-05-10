@@ -22,7 +22,6 @@ const Stack = createNativeStackNavigator();
         <Stack.Screen name="Game" component={GameScreen} />
         <Stack.Screen name="Batterie" component={BatterieScreen} />
       </Stack.Navigator>
-      <Footer/>
     </NavigationContainer>
     </>
   );

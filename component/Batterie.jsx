@@ -1,12 +1,18 @@
 import * as React from 'react';
 import * as Battery from 'expo-battery';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View } from 'react-native';
 import { styles } from '../assets/styles';
 
 export default class Batterie extends React.Component {
     state = {
       batteryLevel: null,
     };
+    constructor(props) {
+      super(props);
+      this.state = {
+        count: 0
+      };
+    }
   
     componentDidMount() {
       this._subscribe();
@@ -32,7 +38,11 @@ export default class Batterie extends React.Component {
   
     render() {
       return (
+        <View>
           <Text>Current Battery Level: {this.state.batteryLevel}</Text>
+          <Text>Vous avez cliqué {this.state.count} fois</Text>
+          <Button title="Cliquez ici" onPress={() => this.setState({ count: this.state.count + 1 })}/>
+        </View>
       );
     }
   }
